@@ -1,45 +1,97 @@
 #include <stdio.h>
 
 int main() {
-                                     //EXEMPLOS
-    char estado[50];                 // Ceará 
-    char codigo[4];                  // A01
-    char nome_cidade[50];            // Fortaleza
-    int populacao;                   // 20.000.000
-    float area;                      // 10.000.000
-    float pib;                       // 30.000.000
-    int pontos_turistico;            // 50
 
-    printf("Digite o estado: ");  //saída(output)
-    scanf("%s", estado);          //entrada(input)
+    //CARTA 1
+                                     //EXEMPLOS
+    char estado1[50];                 // Ceará 
+    char codigo1[4];                  // A01
+    char nome_cidade1[50];            // Fortaleza
+    float populacao1;                 // 2.43
+    float area1;                      // 146.348
+    float pib1;                       // 194.9
+    int pontos_turistico1;            // 15
+
+
+    printf("===SUPER TRUNFO ESTADOS===\n");
+    // Cadastro da carta 1 (entrada de dados)
+    printf("\n=== Cadastro da Carta 1 ===\n");
+
+    printf("Digite o estado: ");  
+    scanf(" %[^\n]", estado1);        //lê até encontrar o ENTER  
 
     printf("Digite o código da carta: ");
-    scanf("%3s", codigo);   // limita a 3 caracteres
+    scanf("%3s", codigo1);   // limita a 3 caracteres
 
     printf("Digite o nome da cidade: ");
-    scanf("%s", nome_cidade);
+    scanf(" %[^\n]", nome_cidade1);
 
     printf("Digite a população: ");
-    scanf("%d", &populacao);
+    scanf("%f", &populacao1);
 
     printf("Digite a área da cidade (em km²): ");
-    scanf(" %f", &area);
+    scanf("%f", &area1);
 
     printf("Digite o PIB da cidade: ");
-    scanf(" %f", &pib);
+    scanf("%f", &pib1);
 
     printf("Digite o número de pontos turísticos: ");
-    scanf("%d", &pontos_turistico);
+    scanf("%d", &pontos_turistico1);
  
     // // Exibição dos dados
     printf("\n--- Carta 1 ---\n");
-    printf("Nome: %s\n", estado);
-    printf("Código: %s\n", codigo);
-    printf("Nome da cidade: %s\n", nome_cidade);
-    printf("População: %.2d habitantes\n", populacao);
-    printf("Área: %.2f km²\n", area);
-    printf("PIB: %.2f bilhões\n", pib);
-    printf("Pontos Turísticos: %d\n", pontos_turistico);
+    printf("Nome: %s\n", estado1);
+    printf("Código: %s\n", codigo1);
+    printf("Nome da cidade: %s\n", nome_cidade1);
+    printf("População: %f milhões de habitantes\n", populacao1);
+    printf("Área: %f km²\n", area1);
+    printf("PIB: %.2f bilhões\n", pib1);
+    printf("Pontos Turísticos: %d\n", pontos_turistico1);
+
+    //CARTA 2
+                                       //EXEMPLOS
+    char estado2[50];                 // Rio de Janeiro
+    char codigo2[4];                  // A02
+    char nome_cidade2[50];            // Rio de Janeiro
+    float populacao2;                 // 6.7
+    float area2;                      // 1.221
+    float pib2;                       // 11.163
+    int pontos_turistico2;            // 50
+
+     // Cadastro da carta 2 (entrada de dados)
+    printf("\n=== Cadastro da Carta 2 ===\n");
+
+    printf("Digite o estado: ");  
+    scanf(" %[^\n]", estado2);        //lê até encontrar o ENTER  
+
+    printf("Digite o código da carta: ");
+    scanf("%3s", codigo2);   // limita a 3 caracteres
+
+    printf("Digite o nome da cidade: ");
+    scanf(" %[^\n]", nome_cidade2);
+
+    printf("Digite a população: ");
+    scanf("%f", &populacao2);
+
+    printf("Digite a área da cidade (em km²): ");
+    scanf("%f", &area2);
+
+    printf("Digite o PIB da cidade: ");
+    scanf("%f", &pib2);
+
+    printf("Digite o número de pontos turísticos: ");
+    scanf("%d", &pontos_turistico2);
+ 
+    // // Exibição dos dados
+    printf("\n--- Carta 2 ---\n");
+    printf("Nome: %s\n", estado2);
+    printf("Código: %s\n", codigo2);
+    printf("Nome da cidade: %s\n", nome_cidade2);
+    printf("População: %f milhões de habitantes\n", populacao2);
+    printf("Área: %f km²\n", area2);
+    printf("PIB: %.2f bilhões\n", pib2);
+    printf("Pontos Turísticos: %d\n", pontos_turistico2);
+
 
     return 0;
 }
